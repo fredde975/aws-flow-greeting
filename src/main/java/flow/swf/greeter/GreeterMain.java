@@ -18,7 +18,7 @@ public class GreeterMain {
         AWSCredentials awsCredentials = new BasicAWSCredentials(swfAccessId, swfSecretKey);
 
         AmazonSimpleWorkflow service = new AmazonSimpleWorkflowClient(awsCredentials, config);
-        service.setEndpoint("https://swf.us-east-1.amazonaws.com");
+        service.setEndpoint("https://swf.eu-west-1.amazonaws.com");
 
         String domain = "helloWorldWalkthrough";
 

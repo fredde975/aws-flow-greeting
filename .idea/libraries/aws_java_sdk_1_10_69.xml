@@ -4,6 +4,8 @@
       <root url="jar://$PROJECT_DIR$/../../../aws-java-sdk-1.10.69/lib/aws-java-sdk-1.10.69.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../aws-java-sdk-1.10.69/lib/aws-java-sdk-1.10.69-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
