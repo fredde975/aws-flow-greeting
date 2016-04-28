@@ -23,7 +23,7 @@ public class GreeterWorker  {
         service.setEndpoint("https://swf.eu-west-1.amazonaws.com");
 
         String domain = "helloWorldWalkthrough";
-        String taskListToPoll = "HelloWorldList";
+        String taskListToPoll = "HelloWorldAsyncList";
 
         ActivityWorker aw = new ActivityWorker(service, domain, taskListToPoll);
         aw.addActivitiesImplementation(new GreeterActivitiesImpl());
