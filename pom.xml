@@ -3,8 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>example.swf.hello</groupId>
     <artifactId>helloswf</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>hello-lambda</module>
+    </modules>
     <name>helloswf</name>
     <url>http://maven.apache.org</url>
 
@@ -57,13 +60,6 @@
             <artifactId>aspectjrt</artifactId>
             <version>${aspectj-runtime.version}</version>
             <optional>true</optional>
-        </dependency>
-
-        <!-- lambda dependency -->
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-lambda-java-core</artifactId>
-            <version>LATEST</version>
         </dependency>
 
         <!-- third party dependencies -->

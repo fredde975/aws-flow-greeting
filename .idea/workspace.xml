@@ -2,17 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a96b71ff-f3f9-4c15-925d-b04671405968" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hellolambda/LambdaExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/helloswf-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/helloswf-1.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-lambda/hello-lambda.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-lambda/pom.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/builddef.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/example/swf/hello/ActivityWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/example/swf/hello/HelloTypes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/example/swf/hello/WorkflowStarter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/example/swf/hello/WorkflowWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterActivities.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterActivitiesClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterActivitiesClientImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterActivitiesImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClientExternal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClientExternalFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClientExternalFactoryImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClientExternalImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClientFactoryImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowClientImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowSelfClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowSelfClientImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/flow/swf/greeter/GreeterWorkflowSelfClientImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/helloswf-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/hellolambda/LambdaExample.java" afterPath="$PROJECT_DIR$/hello-lambda/src/main/java/example/Hello.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/builddef.lst" afterPath="$PROJECT_DIR$/target/classes/builddef.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloswf.iml" afterPath="$PROJECT_DIR$/helloswf.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="helloswf.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/helloLambda/target/" />
+    <ignored path="$PROJECT_DIR$/hello-lambda/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,14 +119,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LambdaExample.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hellolambda/LambdaExample.java">
+      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-lambda/src/main/java/example/Hello.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-lambda/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,6 +211,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -224,8 +275,12 @@
         <option value="$PROJECT_DIR$/src/main/java/hellolambda/HelloLambdaWorkflowImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/hellolambda/WorkflowExecutionStarter.java" />
         <option value="$PROJECT_DIR$/src/main/java/hellolambda/WorkflowHost.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/hellolambda/LambdaExample.java" />
+        <option value="$PROJECT_DIR$/helloLambda/pom.xml" />
+        <option value="$PROJECT_DIR$/hello-lambda/src/main/java/LambdaExample.java" />
+        <option value="$PROJECT_DIR$/hello-lambda/src/main/java/example/Hello.java" />
+        <option value="$PROJECT_DIR$/hello-lambda/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -272,10 +327,15 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
@@ -336,7 +396,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated-sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="annotations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,15 +418,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="hello-lambda" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,19 +432,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="hello-lambda" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hellolambda" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1041,7 +1093,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460753778400</updated>
-      <workItem from="1461869604976" duration="22634000" />
+      <workItem from="1461869604976" duration="23703000" />
     </task>
     <task id="LOCAL-00001" summary="Working code: greeter">
       <created>1461788778246</created>
@@ -1078,7 +1130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1462912525609</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added a lambda function">
+      <created>1462994684364</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1462994684364</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1096,10 +1155,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22634000" />
+    <option name="totallyTimeSpent" value="23703000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1114,7 +1173,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1423462" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45815602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1173,7 +1232,8 @@
     <MESSAGE value="Modded asynch package. Should work, but does not.&#10;&#10;Maybe somthing is wrong and I try to read somethong that is not ready.&#10;&#10;&#10;WorkflowExecutionFailed [with EventId 5] selected&#10;Decision Task Completed Event Id&#9;4&#10;Details&#9;[&quot;java.lang.IllegalStateException&quot;,{&quot;cause&quot;:null,&quot;stackTrace&quot;:[{&quot;methodName&quot;:&quot;get&quot;,&quot;fileName&quot;:&quot;Settable.java&quot;,&quot;lineNumber&quot;:91,&quot;className&quot;:&quot;com.amazonaws.services.simpleworkflow.flow.core.Settable&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;get&quot;,&quot;fileName&quot;:&quot;Functor.java&quot;,&quot;lineNumber&quot;:35,&quot;className&quot;:&quot;com.amazonaws.services.simpleworkflow.flow.core.Functor&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;getGreeting&quot;,&quot;fileName&quot;:&quot;GreeterWorkflowImpl.java&quot;,&quot;lineNumber&quot;:18,&quot;className&quot;:&quot;asynch.swf.GreeterWorkflowImpl&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;greet&quot;,&quot;fileName&quot;:&quot;GreeterWorkflowImpl.java&quot;,&quot;lineNumber&quot;:12,&quot;className&quot;:&quot;asynch.swf.GreeterWorkflowImpl&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;invoke0&quot;,&quot;fileName&quot;:&quot;NativeMethodAccessorImpl.java&quot;,&quot;lineNumber&quot;:-2,&quot;className&quot;:&quot;sun.reflect.NativeMethodAccessorImpl&quot;,&quot;nativeMethod&quot;:true},{&quot;methodName&quot;:&quot;invoke&quot;,&quot;fileName&quot;:&quot;NativeMethodAccessorImpl.java&quot;,&quot;lineNumber&quot;:57,&quot;className&quot;:&quot;sun.reflect.NativeMethodAccessorImpl&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;invoke&quot;,&quot;fileName&quot;:&quot;DelegatingMethodAccessorImpl.java&quot;,&quot;lineNumber&quot;:43,&quot;className&quot;:&quot;sun.reflect.DelegatingMethodAccessorImpl&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;invoke&quot;,&quot;fileName&quot;:&quot;Method.java&quot;,&quot;lineNumber&quot;:606,&quot;className&quot;:&quot;java.lang.reflect.Method&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;invokeMethod&quot;,&quot;fileName&quot;:&quot;POJOWorkflowDefinition.java&quot;,&quot;lineNumber&quot;:150,&quot;className&quot;:&quot;com.amazonaws.services.simpleworkflow.flow.pojo.POJOWorkflowDefinition&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;access$1&quot;,&quot;fileName&quot;:&quot;POJOWorkflowDefinition.java&quot;,&quot;lineNumber&quot;:148,&quot;className&quot;:&quot;com.amazonaws.services.simpleworkflow.flow.pojo.POJOWorkflowDefinition&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;doTry&quot;,&quot;fileName&quot;:&quot;POJOWorkflowDefinition.java&quot;,&quot;lineNumber&quot;:76,&quot;className&quot;:&quot;com.amazonaws.services.simpleworkflow.flow.pojo.POJOWorkflowDefinition$1&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;lineNumber&quot;:0,&quot;className&quot;:&quot;--- continuation ---&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;execute&quot;,&quot;fileName&quot;:&quot;POJOWorkflowDefinition.java&quot;,&quot;lineNumber&quot;:66,&quot;className&quot;:&quot;com.amazonaws.services.simpleworkflow.flow.pojo.POJOWorkflowDefinition&quot;,&quot;nativeMethod&quot;:false},{&quot;methodName&quot;:&quot;doAsync&quot;,&quot;fileName&quot;:&quot;AsyncDecider.java&quot;,&quot;lineNumber&quot;:70,&quot;className&quot;:&quot;com.amazonaws.services.simpleworkflow.flow.worker.AsyncDecider$WorkflowExecuteAsyncScope&quot;,&quot;nativeMethod&quot;:false}],&quot;message&quot;:&quot;not ready&quot;,&quot;localizedMessage&quot;:&quot;not ready&quot;,&quot;suppressed&quot;:[&quot;[Ljava.lang.Throwable;&quot;,[]]}]&#10;Event Timestamp&#9;Thu Apr 28 21:33:55 GMT+200 2016&#10;Reason&#9;not ready" />
     <MESSAGE value="added humanTask package" />
     <MESSAGE value="added lambda sample to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lambda sample to the project" />
+    <MESSAGE value="added a lambda function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a lambda function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1184,28 +1244,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/annotations/humantask/HumanTaskWorkflowClientFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="e#927#928#0" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/annotations/humantask/HumanTaskWorkflowSelfClientImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#1568#1569#0" expanded="false" />
-            <element signature="e#1608#1609#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/annotations/humantask/HumanTaskWorkflowSelfClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1514,14 +1552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hellolambda/WorkflowHost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1626,13 +1656,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hellolambda/LambdaExample.java">
+    <entry file="file://$PROJECT_DIR$/helloLambda/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-lambda/src/main/java/example/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-lambda/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hello-lambda/hello-lambda.iml" filepath="$PROJECT_DIR$/hello-lambda/hello-lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloswf.iml" filepath="$PROJECT_DIR$/helloswf.iml" />
     </modules>
   </component>
