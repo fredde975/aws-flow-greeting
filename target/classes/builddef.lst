@@ -30,6 +30,7 @@
 /Users/fredrik/op/vidareutbildning/aws/development/swf_test/helloswf/src/main/java/humantask/HumanTaskWorkflowImpl.java
 /Users/fredrik/op/vidareutbildning/aws/development/swf_test/helloswf/src/main/java/example/swf/hello/WorkflowStarter.java
 /Users/fredrik/op/vidareutbildning/aws/development/swf_test/helloswf/target/generated-sources/annotations/hellolambda/HelloLambdaWorkflowSelfClient.java
+/Users/fredrik/op/vidareutbildning/aws/development/swf_test/helloswf/src/main/java/hellolambda/LambdaExample.java
 /Users/fredrik/op/vidareutbildning/aws/development/swf_test/helloswf/src/main/java/distributed/swf/GreeterWorker.java
 /Users/fredrik/op/vidareutbildning/aws/development/swf_test/helloswf/target/generated-sources/annotations/flow/swf/greeter/GreeterActivitiesClientImpl.java
 /Users/fredrik/op/vidareutbildning/aws/development/swf_test/helloswf/src/main/java/hellolambda/WorkflowHost.java
