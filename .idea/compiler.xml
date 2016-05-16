@@ -28,6 +28,7 @@
       <module name="hello-lambda" target="1.7" />
       <module name="helloLambda" target="1.7" />
       <module name="helloswf" target="1.7" />
+      <module name="start-workflow" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
