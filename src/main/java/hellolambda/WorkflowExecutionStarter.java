@@ -27,8 +27,7 @@ public class WorkflowExecutionStarter {
         String domain = configHelper.getDomain();
         String defaultLambdaRoleArn = configHelper.getSwfLambdaRoleArn();
 
-        HelloLambdaWorkflowClientExternalFactory clientFactory = new HelloLambdaWorkflowClientExternalFactoryImpl(swfService,
-                domain);
+        HelloLambdaWorkflowClientExternalFactory clientFactory = new HelloLambdaWorkflowClientExternalFactoryImpl(swfService, domain);
         HelloLambdaWorkflowClientExternal workflow = clientFactory.getClient();
 
         // give the ARN of an IAM role that allows SWF to invoke lambda functions on your behalf
