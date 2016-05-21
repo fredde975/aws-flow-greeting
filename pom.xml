@@ -15,12 +15,21 @@
 
     <properties>
         <target.dir>target</target.dir>
-        <!-- modified dependencies versions -->
+
+        <!-- modified again -->
         <aws.version>1.10.69</aws.version>
         <freemarker.version>2.3.21</freemarker.version>
         <aspectj-runtime.version>1.7.4</aspectj-runtime.version>
         <aspectj-maven-plugin.version>1.7</aspectj-maven-plugin.version>
         <compliance.level>1.7</compliance.level>
+
+
+        <!-- modified dependencies versions -->
+        <!--<aws.version>1.10.69</aws.version>-->
+        <!--<freemarker.version>2.3.21</freemarker.version>-->
+        <!--<aspectj-runtime.version>1.7.4</aspectj-runtime.version>-->
+        <!--<aspectj-maven-plugin.version>1.7</aspectj-maven-plugin.version>-->
+        <!--<compliance.level>1.7</compliance.level>-->
 
         <!-- DO NOT modify dependencies versions -->
         <!--<aws.version>1.7.3</aws.version>-->

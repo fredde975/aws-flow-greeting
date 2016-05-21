@@ -36,7 +36,7 @@ public class MyLambdaWorkflowImpl implements MyLambdaWorkflow {
         LambdaFunctionClient lambdaClient = decisionContext.getLambdaFunctionClient();
 
         //Promise<String> output =
-        lambdaClient.scheduleLambdaFunction("helloLambda", name + "123454321");
+        lambdaClient.scheduleLambdaFunction("helloLambda", "123454321");
         //Promise<String> output2 =
         lambdaClient.scheduleLambdaFunction("helloLambda2", "12321");
         //System.out.println("output2 = " + output2);

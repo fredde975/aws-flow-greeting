@@ -33,7 +33,7 @@ public class HelloLambdaWorkflowImpl implements HelloLambdaWorkflow{
         DecisionContext decisionContext = decisionProvider.getDecisionContext();
         LambdaFunctionClient lambdaClient = decisionContext.getLambdaFunctionClient();
 
-        lambdaClient.scheduleLambdaFunction(configHelper.getSwfLambdaFunction(), configHelper.getSwfLambdaFunctionInput());
+        //lambdaClient.scheduleLambdaFunction(configHelper.getSwfLambdaFunction(), configHelper.getSwfLambdaFunctionInput());
     }
 
 }
