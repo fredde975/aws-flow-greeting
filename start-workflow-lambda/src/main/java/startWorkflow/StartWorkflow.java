@@ -70,7 +70,7 @@ public class StartWorkflow {
                 + "\" and runId=\"" + workflowExecution.getRunId() + "\"");
     }
 
-    public void startWorkflowSimpleHandler(S3EventNotification notification, Context context){
+    public void startWorkflowSimpleHandler(S3EventNotification notification, final Context context){
         LambdaLogger logger = context.getLogger();
         logger.log("Got an s3 event!");
         try {
@@ -104,6 +104,5 @@ public class StartWorkflow {
         WorkflowExecution workflowExecution = workflow.getWorkflowExecution();
         logger.log("Started myLambda workflow with workflowId=\"" + workflowExecution.getWorkflowId()
                 + "\" and runId=\"" + workflowExecution.getRunId() + "\"");
-
     }
 }

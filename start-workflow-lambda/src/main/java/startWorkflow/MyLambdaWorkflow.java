@@ -27,7 +27,7 @@ import com.amazonaws.services.simpleworkflow.flow.annotations.WorkflowRegistrati
 @WorkflowRegistrationOptions(defaultExecutionStartToCloseTimeoutSeconds = 60, defaultLambdaRole = "arn:aws:iam::487526570401:role/swf-lambda")
 public interface MyLambdaWorkflow {
 
-    @Execute(version = "1.0")
+    @Execute(version = "2.0")
     void myWorld(String name) throws Exception;
 
 }

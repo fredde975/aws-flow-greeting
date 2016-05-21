@@ -14,10 +14,14 @@
  */
 package startWorkflow;
 
+import com.amazonaws.services.lambda.runtime.LambdaLogger;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContext;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContextProvider;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContextProviderImpl;
 import com.amazonaws.services.simpleworkflow.flow.worker.LambdaFunctionClient;
+import com.amazonaws.services.lambda.runtime.Context;
+
+
 
 /**
  * Implementation of the hello lambda workflow
@@ -26,6 +30,7 @@ public class MyLambdaWorkflowImpl implements MyLambdaWorkflow {
 
     @Override
     public void myWorld(String name) throws Exception {
+        System.out.println("Input to workflow, name = " + name);
         DecisionContextProvider decisionProvider = new DecisionContextProviderImpl();
         DecisionContext decisionContext = decisionProvider.getDecisionContext();
         LambdaFunctionClient lambdaClient = decisionContext.getLambdaFunctionClient();
