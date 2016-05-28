@@ -14,19 +14,21 @@
  */
 package startWorkflow;
 
-import com.amazonaws.services.lambda.runtime.LambdaLogger;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContext;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContextProvider;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContextProviderImpl;
+import com.amazonaws.services.simpleworkflow.flow.core.Promise;
 import com.amazonaws.services.simpleworkflow.flow.worker.LambdaFunctionClient;
-import com.amazonaws.services.lambda.runtime.Context;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Implementation of the hello lambda workflow
  */
 public class MyLambdaWorkflowImpl implements MyLambdaWorkflow {
+    HelloActivitiesClient operations = new HelloActivitiesClientImpl();
 
     @Override
     public void myWorld(String name) throws Exception {
@@ -41,7 +43,31 @@ public class MyLambdaWorkflowImpl implements MyLambdaWorkflow {
         lambdaClient.scheduleLambdaFunction("helloLambda2", "12321");
         //System.out.println("output2 = " + output2);
 
+        Promise<String> output3 = lambdaClient.scheduleLambdaFunction("helloLambda3", "1234567654321");
+        System.out.println("output3 = " + output3);
 
+        Promise<Float> sum = operations.calculateSum(generateOrderList());
+        operations.printResult(sum);
     }
 
+
+    private static List<HelloOrder> generateOrderList(){
+        int minNumber = 1;
+        int minAmount = 1;
+        int maxAmount = 99;
+        int maxNumber = 99;
+        float minPrice = 1;
+        float maxPrice = 100;
+
+        List<HelloOrder> orderList = new ArrayList<>();
+        int randomNumber = minNumber + (int)(Math.random() * ((maxNumber - minNumber) + 1));
+
+        for(int i = 0; i < randomNumber; i++) {
+            int randomAmount = minAmount + (int)(Math.random() * ((maxAmount - minAmount) + 1));
+            Float randomPrice = new Float(minPrice + (int)(Math.random() * ((maxPrice - minPrice) + 1)));
+            orderList.add(new HelloOrder(randomAmount, randomPrice));
+        }
+
+        return orderList;
+    }
 }

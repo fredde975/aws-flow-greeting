@@ -19,9 +19,11 @@ import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflow;
 import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflowClient;
+import com.amazonaws.services.simpleworkflow.flow.ActivityWorker;
 import com.amazonaws.services.simpleworkflow.flow.WorkflowWorker;
 import common.ConfigHelper;
 import hellolambda.HelloLambdaWorkflowImpl;
+import simpleWorkflow.OrderActivitiesImpl;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -48,6 +50,11 @@ public class WorkflowHost {
         worker.start();
 
         System.out.println("Workflow Host Service Started...");
+
+//        ActivityWorker aw = new ActivityWorker(swfService, domain, DECISION_TASK_LIST);
+//        aw.addActivitiesImplementation(new HelloActivitiesImpl());
+//        aw.start();
+
 
         Runtime.getRuntime().addShutdownHook(new Thread() {
 
