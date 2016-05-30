@@ -51,7 +51,7 @@ public class GreeterActivitiesClientImpl extends ActivitiesClientBase implements
 
         ActivityType activityType = new ActivityType();
 		activityType.setName("GreeterActivities.getName");
-		activityType.setVersion("1.0");
+		activityType.setVersion("4.0");
 
         Promise[] _input_ = new Promise[0];
 
@@ -94,7 +94,7 @@ public class GreeterActivitiesClientImpl extends ActivitiesClientBase implements
 
         ActivityType activityType = new ActivityType();
 		activityType.setName("GreeterActivities.getGreeting");
-		activityType.setVersion("1.0");
+		activityType.setVersion("4.0");
 
         Promise[] _input_ = new Promise[1];
         _input_[0] = name;
@@ -138,12 +138,68 @@ public class GreeterActivitiesClientImpl extends ActivitiesClientBase implements
 
         ActivityType activityType = new ActivityType();
 		activityType.setName("GreeterActivities.say");
-		activityType.setVersion("1.0");
+		activityType.setVersion("4.0");
 
         Promise[] _input_ = new Promise[1];
         _input_[0] = what;
 
         return (Promise)scheduleActivity(activityType, _input_, optionsOverride, Void.class, waitFor);
+    }
+
+    @Override
+    public final Promise<String> humanActionRequired() {
+        return humanActionRequiredImpl((ActivitySchedulingOptions)null);
+    }
+
+    @Override
+    public final Promise<String> humanActionRequired(Promise<?>... waitFor) {
+        return humanActionRequiredImpl((ActivitySchedulingOptions)null, waitFor);
+    }
+
+    @Override
+    public final Promise<String> humanActionRequired(ActivitySchedulingOptions optionsOverride, Promise<?>... waitFor) {
+        return humanActionRequiredImpl(optionsOverride, waitFor);
+    }
+    
+    
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+    protected Promise<String> humanActionRequiredImpl(final ActivitySchedulingOptions optionsOverride, Promise<?>... waitFor) {
+
+        ActivityType activityType = new ActivityType();
+		activityType.setName("GreeterActivities.humanActionRequired");
+		activityType.setVersion("4.0");
+
+        Promise[] _input_ = new Promise[0];
+
+        return (Promise)scheduleActivity(activityType, _input_, optionsOverride, String.class, waitFor);
+    }
+
+    @Override
+    public final Promise<String> mailTask() {
+        return mailTaskImpl((ActivitySchedulingOptions)null);
+    }
+
+    @Override
+    public final Promise<String> mailTask(Promise<?>... waitFor) {
+        return mailTaskImpl((ActivitySchedulingOptions)null, waitFor);
+    }
+
+    @Override
+    public final Promise<String> mailTask(ActivitySchedulingOptions optionsOverride, Promise<?>... waitFor) {
+        return mailTaskImpl(optionsOverride, waitFor);
+    }
+    
+    
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+    protected Promise<String> mailTaskImpl(final ActivitySchedulingOptions optionsOverride, Promise<?>... waitFor) {
+
+        ActivityType activityType = new ActivityType();
+		activityType.setName("GreeterActivities.mailTask");
+		activityType.setVersion("4.0");
+
+        Promise[] _input_ = new Promise[0];
+
+        return (Promise)scheduleActivity(activityType, _input_, optionsOverride, String.class, waitFor);
     }
 
 }

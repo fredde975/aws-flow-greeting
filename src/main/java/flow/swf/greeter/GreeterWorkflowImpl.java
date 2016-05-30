@@ -9,6 +9,9 @@ public class GreeterWorkflowImpl implements GreeterWorkflow {
         Promise<String> name = operations.getName();
         Promise<String> greeting = operations.getGreeting(name);
         operations.say(greeting);
+        operations.mailTask();
+        operations.humanActionRequired();
+
     }
 }
 

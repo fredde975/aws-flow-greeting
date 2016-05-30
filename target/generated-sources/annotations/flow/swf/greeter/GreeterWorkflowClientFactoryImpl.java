@@ -38,7 +38,7 @@ public class GreeterWorkflowClientFactoryImpl extends WorkflowClientFactoryBase<
             StartWorkflowOptions options, DataConverter dataConverter, GenericWorkflowClient genericClient) {
         WorkflowType workflowType = new WorkflowType();
         workflowType.setName("GreeterWorkflow.greet");
-        workflowType.setVersion("1.0");
+        workflowType.setVersion("4.0");
         return new GreeterWorkflowClientImpl(execution, workflowType, options, dataConverter, genericClient);
     }
    

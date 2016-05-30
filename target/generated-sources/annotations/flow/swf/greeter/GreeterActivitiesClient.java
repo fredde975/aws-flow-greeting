@@ -93,4 +93,34 @@ public interface GreeterActivitiesClient extends ActivitiesClient
      */
     Promise<Void> say(Promise<String> what, ActivitySchedulingOptions optionsOverride, Promise<?>... waitFor);
 
+    /**
+     * Generated from {@link flow.swf.greeter.GreeterActivities#humanActionRequired}
+     */
+    Promise<String> humanActionRequired();
+
+    /**
+     * Generated from {@link flow.swf.greeter.GreeterActivities#humanActionRequired}
+     */
+    Promise<String> humanActionRequired(Promise<?>... waitFor);
+
+    /**
+     * Generated from {@link flow.swf.greeter.GreeterActivities#humanActionRequired}
+     */
+    Promise<String> humanActionRequired(ActivitySchedulingOptions optionsOverride, Promise<?>... waitFor);
+
+    /**
+     * Generated from {@link flow.swf.greeter.GreeterActivities#mailTask}
+     */
+    Promise<String> mailTask();
+
+    /**
+     * Generated from {@link flow.swf.greeter.GreeterActivities#mailTask}
+     */
+    Promise<String> mailTask(Promise<?>... waitFor);
+
+    /**
+     * Generated from {@link flow.swf.greeter.GreeterActivities#mailTask}
+     */
+    Promise<String> mailTask(ActivitySchedulingOptions optionsOverride, Promise<?>... waitFor);
+
 }

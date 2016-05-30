@@ -38,7 +38,7 @@ public class GreeterWorkflowClientExternalFactoryImpl extends WorkflowClientFact
         WorkflowType workflowType = new WorkflowType();
         workflowType = new WorkflowType();
         workflowType.setName("GreeterWorkflow.greet");
-        workflowType.setVersion("1.0");
+        workflowType.setVersion("4.0");
         return new GreeterWorkflowClientExternalImpl(workflowExecution, workflowType, options, dataConverter, genericClient);
     }
     
