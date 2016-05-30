@@ -73,12 +73,15 @@ public class StartWorkflow {
     public void startWorkflowSimpleHandler(S3EventNotification notification, final Context context){
         LambdaLogger logger = context.getLogger();
         logger.log("Got an s3 event!");
+        String imageUrl = null;
         try {
             for (S3EventNotification.S3EventNotificationRecord record : notification.getRecords()) {
                 System.out.println(record.getEventSource());
                 System.out.println(record.getEventName());
+                System.out.println(record.getAwsRegion());
                 System.out.println(record.getS3().getBucket().getName());
                 System.out.println(record.getS3().getObject().getKey());
+                imageUrl = "https://s3-eu-west-1.amazonaws.com" + "/" + record.getS3().getBucket().getName() + "/" + record.getS3().getObject().getKey();
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -98,7 +101,8 @@ public class StartWorkflow {
         StartWorkflowOptions options = new StartWorkflowOptions().withLambdaRole(defaultLambdaRoleArn);
 
         // Start Workflow Execution
-        workflow.myWorld("User", options);
+        //workflow.myWorld("User", options);
+        workflow.myWorld(imageUrl, options);
 
         // WorkflowExecution is available after workflow creation
         WorkflowExecution workflowExecution = workflow.getWorkflowExecution();

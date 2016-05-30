@@ -38,7 +38,7 @@ public class HumanTaskConsole {
         String result = getResult();
 
         //complete the activity task
-        AmazonSimpleWorkflow swfService = Common.createSWFClient();
+        AmazonSimpleWorkflow swfService = common.AWSUtils.createSWFClient();
         ManualActivityCompletionClientFactory manualCompletionClientFactory = new ManualActivityCompletionClientFactoryImpl(swfService);
         ManualActivityCompletionClient manualCompletionClient = manualCompletionClientFactory.getClient(taskToken);
         manualCompletionClient.complete(result);
@@ -60,8 +60,7 @@ public class HumanTaskConsole {
 
 
     public void completeGetNameActivity(String taskToken) {
-
-        AmazonSimpleWorkflow swfClient = Common.createSWFClient();
+        AmazonSimpleWorkflow swfClient = common.AWSUtils.createSWFClient();
 
         ManualActivityCompletionClientFactory manualCompletionClientFactory = new ManualActivityCompletionClientFactoryImpl(swfClient);
         ManualActivityCompletionClient manualCompletionClient = manualCompletionClientFactory.getClient(taskToken);
@@ -70,7 +69,7 @@ public class HumanTaskConsole {
     }
 
     public void failGetNameActivity(String taskToken, Throwable failure) {
-        AmazonSimpleWorkflow swfClient = Common.createSWFClient();
+        AmazonSimpleWorkflow swfClient = common.AWSUtils.createSWFClient();
 
         ManualActivityCompletionClientFactory manualCompletionClientFactory = new ManualActivityCompletionClientFactoryImpl(swfClient);
         ManualActivityCompletionClient manualCompletionClient = manualCompletionClientFactory.getClient(taskToken);

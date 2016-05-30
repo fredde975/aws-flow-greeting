@@ -6,7 +6,7 @@ import java.util.UUID;
 public class GreeterMain {
 
     public static void main(String[] args) throws Exception {
-        AmazonSimpleWorkflow service = Common.createSWFClient();
+        AmazonSimpleWorkflow service = common.AWSUtils.createSWFClient();
 
         String domain = "helloWorldWalkthrough";
 

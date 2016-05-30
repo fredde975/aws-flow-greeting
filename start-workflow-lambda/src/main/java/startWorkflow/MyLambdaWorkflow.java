@@ -24,10 +24,10 @@ import com.amazonaws.services.simpleworkflow.flow.annotations.WorkflowRegistrati
 @Workflow
 // replace with the ARN of an IAM role that allows SWF to invoke your lambda functions to use it by default
 // when calling lambda functions in this workflow
-@WorkflowRegistrationOptions(defaultExecutionStartToCloseTimeoutSeconds = 60, defaultLambdaRole = "arn:aws:iam::487526570401:role/swf-lambda")
+@WorkflowRegistrationOptions(defaultExecutionStartToCloseTimeoutSeconds = 120, defaultLambdaRole = "arn:aws:iam::487526570401:role/swf-lambda")
 public interface MyLambdaWorkflow {
 
-    @Execute(version = "2.0")
+    @Execute(version = "3.0")
     void myWorld(String name) throws Exception;
 
 }

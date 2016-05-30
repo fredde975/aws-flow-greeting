@@ -14,6 +14,7 @@
  */
 package startWorkflow;
 
+import com.amazonaws.services.s3.event.S3EventNotification;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContext;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContextProvider;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContextProviderImpl;
@@ -31,23 +32,32 @@ public class MyLambdaWorkflowImpl implements MyLambdaWorkflow {
     HelloActivitiesClient operations = new HelloActivitiesClientImpl();
 
     @Override
-    public void myWorld(String name) throws Exception {
-        System.out.println("Input to workflow, name = " + name);
-        DecisionContextProvider decisionProvider = new DecisionContextProviderImpl();
-        DecisionContext decisionContext = decisionProvider.getDecisionContext();
-        LambdaFunctionClient lambdaClient = decisionContext.getLambdaFunctionClient();
+    public void myWorld(String imageUrl) throws Exception {
+        System.out.println("Input to workflow, imageUrl = " + imageUrl);
 
-        //Promise<String> output =
-        lambdaClient.scheduleLambdaFunction("helloLambda", "123454321");
-        //Promise<String> output2 =
-        lambdaClient.scheduleLambdaFunction("helloLambda2", "12321");
-        //System.out.println("output2 = " + output2);
+        Promise<String> reviewResponse = operations.mailImageReview(imageUrl);
+      //  while (!reviewResponse.isReady()){
+      //      Thread.sleep(1000);
+      //  }
+        System.out.println("Result from imageReview: " + reviewResponse);
+        operations.handleReviewResponse(imageUrl + "," + reviewResponse);
 
-        Promise<String> output3 = lambdaClient.scheduleLambdaFunction("helloLambda3", "1234567654321");
-        System.out.println("output3 = " + output3);
+//        DecisionContextProvider decisionProvider = new DecisionContextProviderImpl();
+//        DecisionContext decisionContext = decisionProvider.getDecisionContext();
+//        LambdaFunctionClient lambdaClient = decisionContext.getLambdaFunctionClient();
+//
+//
+//        //Promise<String> output =
+//        lambdaClient.scheduleLambdaFunction("helloLambda", "123454321");
+//        //Promise<String> output2 =
+//        lambdaClient.scheduleLambdaFunction("helloLambda2", "12321");
+//        //System.out.println("output2 = " + output2);
+//
+//        Promise<String> output3 = lambdaClient.scheduleLambdaFunction("helloLambda3", "1234567654321");
+//        System.out.println("output3 = " + output3);
 
-        Promise<Float> sum = operations.calculateSum(generateOrderList());
-        operations.printResult(sum);
+//        Promise<Float> sum = operations.calculateSum(generateOrderList());
+//        operations.printResult(sum);
     }
 
 

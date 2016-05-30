@@ -6,7 +6,7 @@ import com.amazonaws.services.simpleworkflow.flow.WorkflowWorker;
 
 public class GreeterWorker {
     public static void main(String[] args) throws Exception {
-        AmazonSimpleWorkflow service = Common.createSWFClient();
+        AmazonSimpleWorkflow service = common.AWSUtils.createSWFClient();
 
         String domain = "helloWorldWalkthrough";
         String taskListToPoll = "HelloWorldList";

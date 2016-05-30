@@ -51,9 +51,9 @@ public class WorkflowHost {
 
         System.out.println("Workflow Host Service Started...");
 
-//        ActivityWorker aw = new ActivityWorker(swfService, domain, DECISION_TASK_LIST);
-//        aw.addActivitiesImplementation(new HelloActivitiesImpl());
-//        aw.start();
+        ActivityWorker aw = new ActivityWorker(swfService, domain, DECISION_TASK_LIST);
+        aw.addActivitiesImplementation(new HelloActivitiesImpl());
+        aw.start();
 
 
         Runtime.getRuntime().addShutdownHook(new Thread() {
