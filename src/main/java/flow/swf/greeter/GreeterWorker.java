@@ -11,11 +11,9 @@ public class GreeterWorker  {
     public static void main(String[] args) throws Exception {
         ClientConfiguration config = new ClientConfiguration().withSocketTimeout(70*1000);
 
-//        String swfAccessId = System.getenv("AWS_ACCESS_KEY_ID");
-        String swfAccessId = "AKIAI27LYLNPH6GKZ4GQ";
-        String swfSecretKey = "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";
-//        String swfSecretKey = System.getenv("AWS_SECRET_KEY");
-
+        //env. variables set by IntelliJ
+        String swfAccessId = System.getenv("AWS_ACCESS_KEY_ID");
+        String swfSecretKey = System.getenv("AWS_SECRET_KEY");
 
         AWSCredentials awsCredentials = new BasicAWSCredentials(swfAccessId, swfSecretKey);
 

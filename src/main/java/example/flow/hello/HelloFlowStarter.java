@@ -1,4 +1,4 @@
-package flow.swf.greeter;
+package example.flow.hello;
 
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.auth.AWSCredentials;
@@ -6,9 +6,8 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflow;
 import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflowClient;
 
-import java.util.UUID;
 
-public class GreeterMain {
+public class HelloFlowStarter {
 
     public static void main(String[] args) throws Exception {
         ClientConfiguration config = new ClientConfiguration().withSocketTimeout(70*1000);
@@ -21,10 +20,11 @@ public class GreeterMain {
         AmazonSimpleWorkflow service = new AmazonSimpleWorkflowClient(awsCredentials, config);
         service.setEndpoint("https://swf.eu-west-1.amazonaws.com");
 
-        String domain = "helloWorldWalkthrough";
+        //String domain = "HelloDomain2";
+        String domain = "helloFlow";
 
-        GreeterWorkflowClientExternalFactory factory = new GreeterWorkflowClientExternalFactoryImpl(service, domain);
-        GreeterWorkflowClientExternal greeter = factory.getClient(UUID.randomUUID().toString());
-        greeter.greet();
+        HelloFlowWorkflowClientExternalFactory factory = new HelloFlowWorkflowClientExternalFactoryImpl(service, domain);
+        HelloFlowWorkflowClientExternal client = factory.getClient("someWorkflowID");
+        client.sayHelloFlow("Amazon Flow");
     }
 }
