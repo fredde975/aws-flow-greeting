@@ -25,8 +25,8 @@ import com.amazonaws.services.simpleworkflow.flow.WorkflowWorker;
 
 public class MyWorkflowHost {
     private static final String DECISION_TASK_LIST = "HelloLambdaWorkflow";
-    private String swfAccessId = "AKIAI27LYLNPH6GKZ4GQ";
-    private String swfSecretKey = "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";
+    private String swfAccessId = "xxx";
+    private String swfSecretKey = "yyy";
     private String swfEndpointName = "https://swf.eu-west-1.amazonaws.com";
     private String domain = "Samples2";
 
